@@ -1,0 +1,17 @@
+{
+	"name": "mediasource-append-examples",
+	"version": "1.0.0",
+	"main": "index.html",
+	"private": true,
+	"author": {
+		"name": "Joshua Tzucker",
+		"url": "https://joshuatz.com/?utm_source=package&medium=mediasource-append-examples"
+	},
+	"license": "MIT",
+	"scripts": {
+		"build": "marked -i README.md -o index.html"
+	},
+	"devDependencies": {
+		"marked": "^1.2.5"
+	}
+}
