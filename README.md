@@ -1,4 +1,5 @@
-# MediaSource Video Appending Samples [![Github Repo](https://img.shields.io/badge/src-Github%20Repo-blue)](https://github.com/joshuatz/mediasource-append-examples)
+# MediaSource Video Appending Samples
+[![Github Repo](https://img.shields.io/badge/src-Github%20Repo-blue)](https://github.com/joshuatz/mediasource-append-examples) [![Netlify Status](https://img.shields.io/badge/dynamic/json?color=blue&label=Last%20Commit%20SHA&query=object.sha&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fjoshuatz%2Fmediasource-append-examples%2Fgit%2Frefs%2Fheads%2Fmain)](https://app.netlify.com/sites/mediasource-append-examples/deploys)
 > Quickly thrown together samples of some different ways you can use append (`appendBuffer`) with MediaSource SourceBuffers.
 
 Make sure to see [this blog post](https://joshuatz.com/posts/2020/appending-videos-in-javascript-with-mediasource-buffers/) for details. This samples are mostly for illustrative / educational purposes, and more robust approaches should consider things like buffer size, garbage collection, adaptive quality, etc. For example, in place of my multi-file examples, you would normally use something like HLS or DASH.
