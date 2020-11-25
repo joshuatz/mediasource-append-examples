@@ -58,4 +58,11 @@
 		// autoplay and non-muted videos
 		videoElement.play();
 	};
+
+	// Debug Info
+	console.log({
+		sourceBuffer,
+		mediaSource,
+		videoElement
+	});
 })();

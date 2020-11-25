@@ -42,4 +42,11 @@
 
 	// This will kick off event listener chain above
 	sourceBuffer.appendBuffer(clipsToAppend[clipIndex]);
+
+	// Debug Info
+	console.log({
+		sourceBuffer,
+		mediaSource,
+		videoElement
+	});
 })();

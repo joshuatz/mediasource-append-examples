@@ -19,4 +19,11 @@
 		videoElement.play();
 	};
 	sourceBuffer.appendBuffer(vidBuff);
+
+	// Debug Info
+	console.log({
+		sourceBuffer,
+		mediaSource,
+		videoElement
+	});
 })();
