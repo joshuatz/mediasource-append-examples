@@ -5,9 +5,9 @@
 (async () => {
 	const videoElement = document.querySelector('video');
 	const vidClips = [
-		'https://raw.githubusercontent.com/chromium/chromium/b4b3566f27d2814fbba1b115639eb7801dd691cf/media/test/data/bear-vp9-opus.webm',
-		'https://raw.githubusercontent.com/webmproject/libwebm/11cae244cc06c1295bffa9861c610dcde3b9da18/testing/testdata/bbb_480p_vp9_opus_1second.webm',
-		'https://upload.wikimedia.org/wikipedia/commons/transcoded/8/87/Schlossbergbahn.webm/Schlossbergbahn.webm.180p.vp9.webm'
+		'https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f5/STB_Stuttgart_F%C3%B6hrich_U6_Line_Entering_Station_VIDEO.webm/STB_Stuttgart_F%C3%B6hrich_U6_Line_Entering_Station_VIDEO.webm.160p.webm',
+		'https://upload.wikimedia.org/wikipedia/commons/transcoded/8/87/Schlossbergbahn.webm/Schlossbergbahn.webm.160p.webm',
+		'https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.webm'
 	];
 	// Shuffle clips. If you reload the page, you will get a random order of videos!
 	shuffleArr(vidClips);
@@ -23,7 +23,7 @@
 	const mediaSource = new MediaSource();
 	videoElement.src = URL.createObjectURL(mediaSource);
 	// mode = sequence
-	const sourceBuffer = await addSourceBufferWhenOpen(mediaSource, `video/webm; codecs="vp9,opus"`, 'sequence');
+	const sourceBuffer = await addSourceBufferWhenOpen(mediaSource, `video/webm; codecs="vp8,vorbis"`, 'sequence');
 
 	/**
 	 * Pointer to last vid appended out of source list

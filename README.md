@@ -9,9 +9,9 @@ Again, for a more in-depth discussion, make sure to check out my writeup: [joshu
 
 ## Demo Files
 
-> ⚠ Currently, all demo files use a `WEBM` container, with `VP9 + Opus` as the codec. This means that they might not work for you if you are using an older browser, or Safari.
+> ⚠ Currently, the multi-file demos use files with a `WEBM` container, with `VP8 + Vorbis` as the codec, and the other demos use `VP9 + Opus`. This means that they might not work for you if you are using an older browser, or Safari.
 
-> 🐛 🚨 : WARNING: Currently, the multi-file demos are broken in Firefox (at least in my versions of Firefox). I'm investigating, but even the ["more official" examples](https://simpl.info/mse/) seem to be affected by some sort of bug with multiple appends, and it seems **extremely** picky about what files are used. The standard approach works just fine. (PS: If you work on Firefox DevTools, please add a media-internals tool like Chrome has!)
+> 🐛 Firefox has been a little buggy for me with multi-file appends; I swapped over those demos from `VP9/Opus` to `VP8/Vorbis` and it has seemed to improve things. `sequence` mode pretty much only ever works in Chrome, but that is to be expected since that really shouldn't work with multi-track input anyways (and Chrome even warns about this in the log).
 
 - [Standard](./standard) (one file, load via fetch + appendBuffer)
 	- This one has the most explanatory code and comments
